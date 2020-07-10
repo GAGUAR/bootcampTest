@@ -61,7 +61,11 @@ public class Product {
 	
 	
 	//3. getters and setters
-	
+	//3. getters and setters
+	//3. getters and setters
+	//3. getters and setters
+	//3. getters and setters
+	//3. getters and setters
 	public Product(String title, float price, ProductType type, Customer customer) {
 		super();
 		this.title = title;
