@@ -22,14 +22,14 @@ public class ProductController {
 	IProductService prodService;
 	
 		
-	@GetMapping("/showAllProducts") // url address->localhost:8080/product/showAllProducts
+	@GetMapping("/showAllProducts")  // url address->localhost:8080/product/showAllProducts
 	public String getShowAllProducts(Model model) {
 		
 		model.addAttribute("innerObject", prodService.selectAllProducts());
 		return "show-all-products-page";// show-all-products-page.html
 	}
 	
-	@GetMapping("/saveTestingData")//url address->localhost:8080/product/saveTestingData
+	@GetMapping("/saveTestingData")  //url address->localhost:8080/product/saveTestingData
 	public String getSaveTestingData()
 	{
 		prodService.saveTestingData();
@@ -37,7 +37,7 @@ public class ProductController {
 	}
 	
 	//show one product by id
-	@GetMapping("/showAllProducts/{id}")//url address->localhost:8080/product/showAllProducts/id
+	@GetMapping("/showAllProducts/{id}")  //url address->localhost:8080/product/showAllProducts/id
 	public String getShowAllProductsId(@PathVariable(name = "id") int id, Model model) {
 		try
 		{
